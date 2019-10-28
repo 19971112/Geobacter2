@@ -106,6 +106,10 @@ Geobacter pickeringii
 
 ## 系統解析
 
+### 外群の候補
+
+![画像](https://www.researchgate.net/publication/41038562/figure/fig1/AS:213951632678912@1428021452070/Genome-based-Geobacter-phylogeny-Bayesian-inference-of-the-phylogenetic-tree-of-the-six.png)
+
 -------------------------------------------------
 
 ## コドン使用解析
