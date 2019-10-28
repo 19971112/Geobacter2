@@ -112,9 +112,9 @@ Geobacter pickeringii
 コアゲノムに基づく系統解析の場合は，より多くのコアゲノムを得るために，近縁の株を外群として用いる．
 
 - 候補1
-![画像](https://www.researchgate.net/publication/41038562/figure/fig1/AS:213951632678912@1428021452070/Genome-based-Geobacter-phylogeny-Bayesian-inference-of-the-phylogenetic-tree-of-the-six.png)  
 Genome-based Geobacter phylogeny. Bayesian inference of the phylogenetic tree of the six Geobacter species discussed, using another Geobacteraceae species, Pelobacter propionicus, as the outgroup. The tree was based on a concatenation of the proteins in the 697 families that had exactly one ortholog conserved in each of the seven genomes (listed in Additional file 4 of the supplementary material). Values at branch points are posterior probabilities.  
 https://www.researchgate.net/figure/Genome-based-Geobacter-phylogeny-Bayesian-inference-of-the-phylogenetic-tree-of-the-six_fig1_41038562
+![画像](https://www.researchgate.net/publication/41038562/figure/fig1/AS:213951632678912@1428021452070/Genome-based-Geobacter-phylogeny-Bayesian-inference-of-the-phylogenetic-tree-of-the-six.png)  
 
 
 -------------------------------------------------
