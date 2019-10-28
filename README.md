@@ -48,3 +48,32 @@ Geobacter bemidjiensis Bem
 Geobacter daltonii FRC-32	
 Geobacter pickeringii	
 ```
+
+---
+## MEMO
+
+```
+$ cat assembly_summary_refseq.txt | sed -n 2p | tr "\t" "\n" | nl
+     1	# assembly_accession
+     2	bioproject
+     3	biosample
+     4	wgs_master
+     5	refseq_category
+     6	taxid
+     7	species_taxid
+     8	organism_name
+     9	infraspecific_name
+    10	isolate
+    11	version_status
+    12	assembly_level
+    13	release_type
+    14	genome_rep
+    15	seq_rel_date
+    16	asm_name
+    17	submitter
+    18	gbrs_paired_asm
+    19	paired_asm_comp
+    20	ftp_path
+    21	excluded_from_refseq
+    22	relation_to_type_material
+```
