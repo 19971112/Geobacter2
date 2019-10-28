@@ -21,8 +21,7 @@ wget -i lists$organism_name.txt
 gunzip *.gz
 
 # Converting GenBank files to GFF3
-cp ../../../scripts/bp_genbank2gff3.pl .
-perl bp_genbank2gff3.pl ./*.gbff; mv *.{gbff,gff} data/
+perl ../../../scripts/bp_genbank2gff3.pl ./*.gbff; mv *.{gbff,gff} data/
 
 # Running Roary
 roary -f ./analysis/ -e -n -p 40 -i 90 -g 1000000 -v ./data/*.gff
