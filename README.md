@@ -13,9 +13,11 @@ last-update 2019-10-28
 
 -------------------------------------------------
 
-## 解析に使用するデータセット
+## 解析に使用するデータセット候補
 
-refseqデータベースの代表配列のうち，Complete Genomeのゲノム
+- refseqデータベースに登録されているGeobacter属細菌
+
+- refseqデータベースに登録されているGeobacter属細菌の中で，代表配列かつComplete Genomeの配列
 
 `$ cat assembly_summary_refseq.txt | awk -F "\t" '$5 ~ /reference|representative/ && $8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $0}' | cut -f8,10`
 
