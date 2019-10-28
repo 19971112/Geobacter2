@@ -1,6 +1,8 @@
-# Geobacter
+# Geobacter project
 
-last-update 2019-08-08
+last-update 2019-10-28
 
-- ファイル名の置換
+-------------------------------------------------
+## Table of contents
+
 
