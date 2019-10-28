@@ -7,6 +7,7 @@ last-update 2019-10-28
 
 - 解析に使用するデータセット
 - 系統解析
+  - 外群候補
   - コアゲノムに基づいた系統解析
   - 16s RNAに基づいた系統解析
 - 参考文献
@@ -15,7 +16,24 @@ last-update 2019-10-28
 
 ## 解析に使用するデータセット候補
 
-- refseqデータベースに登録されているGeobacter属細菌
+- refseqデータベースに登録されているGeobacter属細菌の中で，Complete Genomete又はChromosomeの配列
+```
+Geobacter sulfurreducens PCA		Complete Genome
+Geobacter metallireducens GS-15		Complete Genome
+Geobacter uraniireducens Rf4		Complete Genome
+Geobacter lovleyi SZ		Complete Genome
+Geobacter bemidjiensis Bem		Complete Genome
+Geobacter daltonii FRC-32		Complete Genome
+Geobacter sp. M21		Complete Genome
+Geobacter sp. M18		Complete Genome
+Geobacter sulfurreducens KN400		Complete Genome
+Geobacter pickeringii		Complete Genome
+Geobacter sulfurreducens		Chromosome
+Geobacter anodireducens		Complete Genome
+Geobacter sulfurreducens		Complete Genome
+Geobacter sp. FeAm09		Complete Genome
+Geobacter sp. DSM 9736		Chromosome
+```
 
 - refseqデータベースに登録されているGeobacter属細菌の中で，代表配列かつComplete Genomeの配列
 
