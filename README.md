@@ -108,6 +108,9 @@ Geobacter pickeringii
 
 ### 外群の候補
 
+系統解析に用いる外群の候補を選定する．
+コアゲノムに基づく系統解析の場合は，より多くのコアゲノムを得るために，近縁の株を外群として用いる．
+
 ![画像](https://www.researchgate.net/publication/41038562/figure/fig1/AS:213951632678912@1428021452070/Genome-based-Geobacter-phylogeny-Bayesian-inference-of-the-phylogenetic-tree-of-the-six.png)
 
 -------------------------------------------------
