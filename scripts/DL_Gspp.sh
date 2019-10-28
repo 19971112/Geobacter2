@@ -1,7 +1,12 @@
 #!/bin/sh
+#PBS -q small
+#PBS -l ncpus=1
+#PBS -V
+cd ${PBS_O_WORKDIR}
+
 
 # Creating directories
-mkdir -p ./data
+mkdir -p ./data/genbank && cd $_
 
 # Downloading assembly_summary_refseq.txt files
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt
