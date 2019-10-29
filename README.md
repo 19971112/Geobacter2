@@ -10,7 +10,9 @@ last-update 2019-10-28
   - [外群候補](#外群の候補)
   - コアゲノムに基づいた系統解析
   - 16s RNAに基づいた系統解析
+- [Google docs](#Google docs)
 - 参考文献
+
 
 -------------------------------------------------
 
@@ -116,6 +118,22 @@ Genome-based Geobacter phylogeny. Bayesian inference of the phylogenetic tree of
 https://www.researchgate.net/figure/Genome-based-Geobacter-phylogeny-Bayesian-inference-of-the-phylogenetic-tree-of-the-six_fig1_41038562
 ![画像](https://www.researchgate.net/publication/41038562/figure/fig1/AS:213951632678912@1428021452070/Genome-based-Geobacter-phylogeny-Bayesian-inference-of-the-phylogenetic-tree-of-the-six.png)  
 
+
+-------------------------------------------------
+## Google docs
+
+
+### 卒論原稿  
+https://docs.google.com/document/d/1rQvYMhk3FVQNyMIVnKuy0YVQ0c1ptzSPRaII9dNG7F4/edit?usp=sharing
+
+### Wolbachia
+https://docs.google.com/document/d/1kqoVJVoFx5-hai_INysaGXYxo_yBLqp4ST-DdwTF558/edit?usp=sharing
+
+### Geobacter 
+https://docs.google.com/document/d/1Nl2Zwn2A5Ibj08iilC3o7o-kUrvEMhnV8gCIrF4l06U/edit?usp=sharing
+
+### 分子生物学会
+https://docs.google.com/document/d/1gZ28IjqzUcF0_Ru51Da5N90VnNlucEB2p_9sz2aa3rg/edit?usp=sharing
 
 -------------------------------------------------
 
