@@ -10,7 +10,7 @@ last-update 2019-10-28
   - [外群候補](#外群の候補)
   - コアゲノムに基づいた系統解析
   - 16s RNAに基づいた系統解析
-- [Google docs](#Google docs)
+- [Google docs](#Google_docs)
 - 参考文献
 
 
@@ -120,7 +120,7 @@ https://www.researchgate.net/figure/Genome-based-Geobacter-phylogeny-Bayesian-in
 
 
 -------------------------------------------------
-## Google docs
+## Google_docs
 
 
 ### 卒論原稿  
