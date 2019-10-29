@@ -1,6 +1,6 @@
 # Geobacter project
 
-last-update 2019-10-28
+last-update 2019-10-29
 
 -------------------------------------------------
 ## Table of contents
