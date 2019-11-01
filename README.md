@@ -138,6 +138,18 @@ https://docs.google.com/document/d/1gZ28IjqzUcF0_Ru51Da5N90VnNlucEB2p_9sz2aa3rg/
 -------------------------------------------------
 
 ## コドン使用解析
+
+
+### 2019-11-01 
+/home/t16965tw/projects/Geobacter/analysis/2019-11-01/2019-10-30/scripts/log.2019-11-01.txt  
+
+エラーが出力された．
+```
+$ cat log.2019-11-01.txt 
+Can't locate G.pm in @INC (@INC contains: //home/t16965tw/g-language-1.9.1/lib /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at run_g_codon_mva.pl line 4.
+BEGIN failed--compilation aborted at run_g_codon_mva.pl line 4.
+
+```
 -------------------------------------------------
 
 ## 参考文献
