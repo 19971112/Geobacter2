@@ -136,6 +136,9 @@ https://docs.google.com/document/d/1Nl2Zwn2A5Ibj08iilC3o7o-kUrvEMhnV8gCIrF4l06U/
 ### 分子生物学会
 https://docs.google.com/document/d/1gZ28IjqzUcF0_Ru51Da5N90VnNlucEB2p_9sz2aa3rg/edit?usp=sharing
 
+### 今後の予定
+https://docs.google.com/document/d/1Nl2Zwn2A5Ibj08iilC3o7o-kUrvEMhnV8gCIrF4l06U/edit?usp=sharing
+
 -------------------------------------------------
 
 ## コドン使用解析
