@@ -3,6 +3,7 @@
 #PBS -l ncpus=40
 #PBS -V
 cd ${PBS_O_WORKDIR}
+source activate bio
 
 ## DATASET 1
 mkdir -p analysis/phylogeny
