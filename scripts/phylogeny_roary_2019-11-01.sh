@@ -6,7 +6,7 @@ cd ${PBS_O_WORKDIR}
 
 ## DATASET 1
 mkdir -p analysis/phylogeny
-mkdir GsppRepCom+out && cd $_
+mkdir $(date +%F) && cd $_
 
 # Downloading assembly_summary_refseq.txt files
 mkdir -p ./data
@@ -45,6 +45,6 @@ cat assembly_summary_refseq.txt | awk -F "\t" -v 'OFS=' '{print $1,"_",$16,"_gen
 cat assembly_summary_refseq.txt | awk -F "\t" -v 'OFS=' '{print $9}' | sed -e 's/strain=//g' | sed -e 's/ /_/g' > Y
 paste -d "_" X Y > replacelist.txt
 python /home/t16965tw/scripts/rename.py replacelist.txt analysis/core_gene_alignment.newick > rename_core_gene_alignment.newick
-cp rename_core_gene_alignment.newick GsppRepCom+out_rename_core_gene_alignment.newick
+cp rename_core_gene_alignment.newick rename_core_gene_alignment.newick
 
 cd ..
