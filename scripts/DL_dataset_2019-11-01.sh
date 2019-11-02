@@ -4,7 +4,6 @@
 #PBS -V
 
 cd ${PBS_O_WORKDIR}
-source activate bio
 
 mkdir -p ./data && cd $_
 mkdir -p $(date +%F) 
