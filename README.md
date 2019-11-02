@@ -5,6 +5,7 @@ last-update 2019-10-29
 -------------------------------------------------
 ## Table of contents
 
+- [実行コマンド](#Command)
 - [解析に使用するデータセット](#解析に使用するデータセット候補)
 - 系統解析
   - [外群候補](#外群の候補)
@@ -16,6 +17,13 @@ last-update 2019-10-29
 
 
 -------------------------------------------------
+## Command
+
+```
+git clone https://github.com/19971112/Geobacter.git
+qsub scripts/DL_dataset_2019-11-02.sh
+qsub scripts/16S_phylogeny.sh
+```
 
 ## 解析に使用するデータセット候補
 
