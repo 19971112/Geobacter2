@@ -22,4 +22,4 @@ cat DL_list | while read FILE; do LINE=$(echo $FILE | sed -n 1p); NAME=$(echo $L
 wget -i DL_path.txt
 gunzip *.gz
 
-mv *.gz $(date +%F) 
+mv *.gbff $(date +%F) 
