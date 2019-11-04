@@ -6,12 +6,14 @@ FNAME = sys.argv[1]
 gbank=SeqIO.parse(open(FNAME,"rU"),"genbank")
 
 for genome in gbank:
+    NB = 1
     for gene in genome.features:
         if gene.type=="rRNA":
             if 'product' in gene.qualifiers:
                 if '16S' in gene.qualifiers['product'][0]:
                     start = gene.location.nofuzzy_start
                     end = gene.location.nofuzzy_end
+                    NB = NB + 1
                     if 'db_xref' in gene.qualifiers:
                         gi=[]
                         gi=str(gene.qualifiers['db_xref'])
