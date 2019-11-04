@@ -16,7 +16,7 @@ mafft --auto data/16S/all.fasta > analysis/16S_phylogeny/16S.maf
 # phylogeny
 FastTree -gtr -nt analysis/16S_phylogeny/16S.maf > analysis/16S_phylogeny/16S.maf.newick
 
-
+######################################################################################################
 
 # extracting 16S rRNA sequence from GenBank files and concatenate
 mkdir -p data/16S_2
