@@ -23,7 +23,7 @@ last-update 2019-10-29
 git clone https://github.com/19971112/Geobacter.git
 git pull origin master
 qsub scripts/DL_dataset_2019-11-02.sh
-qsub scripts/16S_phylogeny.sh
+qsub scripts/16S_phylogeny_2019-11-04.sh
 ```
 
 ## 解析に使用するデータセット候補
