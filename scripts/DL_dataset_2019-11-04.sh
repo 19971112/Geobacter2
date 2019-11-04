@@ -8,9 +8,6 @@ cd ${PBS_O_WORKDIR}
 mkdir -p ./data && cd $_
 mkdir -p dataset2
 
-# Downloading assembly_summary_refseq.txt files
-wget ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt
-
 TYPE="_genomic.gbff.gz"
 organism_name='Geobacter'
 organism_name2='Pelobacter|Desulfovibrio'
