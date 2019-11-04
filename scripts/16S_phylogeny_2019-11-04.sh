@@ -6,7 +6,7 @@ source activate bio
 
 # extracting 16S rRNA sequence from GenBank files and concatenate
 mkdir -p data/16S
-for i in data/dataset/*.gbff; do python scripts/ex_16SrRNA.py $i > $i.16S.fasta; mv $i.16S.fasta data/16S; done
+for i in data/dataset/*.gbff; do python scripts/ex_16SrRNA_2019-11-04.py $i > $i.16S.fasta; mv $i.16S.fasta data/16S; done
 cat data/16S/*.16S.fasta | sed -e 's/ /_/g' | sed -e 's/,/_/g' | sed -e 's/___/_/g' > data/16S/all.fasta
 
 # Multiple alignment
