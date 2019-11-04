@@ -12,12 +12,11 @@ for genome in gbank:
                 if '16S' in gene.qualifiers['product'][0]:
                     start = gene.location.nofuzzy_start
                     end = gene.location.nofuzzy_end
-                    description = genome.description.replace(' ', '_')
                     if 'db_xref' in gene.qualifiers:
                         gi=[]
                         gi=str(gene.qualifiers['db_xref'])
                         gi=gi.split(":")[1]
                         gi=gi.split("'")[0]
-                        print(">GeneId|%s|16SrRNA|%s\n%s" % (gi,descriptionn,genome.seq[start:end]))
+                        print(">GeneId|%s|16SrRNA|%s\n%s" % (gi,genome.description,genome.seq[start:end]))
                     else:
-                        print(">GeneId|NoGenID|16SrRNA|%s\n%s" % (description,genome.seq[start:end]))
+                        print(">GeneId|NoGenID|16SrRNA|%s\n%s" % (genome.description,genome.seq[start:end]))
