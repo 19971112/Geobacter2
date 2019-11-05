@@ -6,4 +6,4 @@ mkdir -p analysis/Genome_signature/gbk && cd $_
 cp ../../../data/dataset2/*.gbff .
 cd ..
 
-for FILE in `ls -Sr gbk/*.gbff`; do echo -n $FILE" "; qsub -v gbk="$FILE" run_g_genome.sh; done > log.$(date +%F).txt
+for FILE in `ls -Sr gbk/*.gbff`; do echo -n $FILE" "; qsub -v gbk="$FILE" ../../scripts/run_g_genome.sh; done > log.$(date +%F).txt
