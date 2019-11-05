@@ -25,6 +25,7 @@ git pull origin master
 mv *.sh.* job/
 qsub scripts/DL_dataset_2019-11-04.sh
 qsub scripts/16S_phylogeny_2019-11-04.sh
+bash scripts/genome_signature.sh
 ```
 
 ## 解析に使用するデータセット候補
