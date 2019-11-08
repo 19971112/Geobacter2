@@ -26,6 +26,7 @@ git pull origin master
 
 # データセットの用意
 qsub scripts/DL_dataset_2019-11-04.sh
+qsub scripts/DL_dataset_2019-11-08.sh
 
 # 16S rRNAに基づく系統解析
 qsub scripts/16S_phylogeny_2019-11-04.sh
