@@ -13,7 +13,7 @@ wget ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq
 
 TYPE="_genomic.gbff.gz"
 organism_name='Geobacter'
-organism_name2='Desulfuromonas|Desulfuromusa|Malonomonas|Geopsychrobacter|Geoalkalibacter|PelobacterStigmatella|Corallococcus|Myxococcus|Anaeromyxobacter|Haliangium|Sorangium' # Desulfuromonadales
+organism_name2='Desulfuromonas|Desulfuromusa|Malonomonas|Geopsychrobacter|Geoalkalibacter|Pelobacter|Stigmatella|Corallococcus|Myxococcus|Anaeromyxobacter|Haliangium|Sorangium' # Desulfuromonadales
 
 cat assembly_summary_refseq.txt | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Chromosome|Complete Genome/ {print $0}' | cut -f20 > DL_list3
 cat assembly_summary_refseq.txt | awk -F "\t" '$5 ~ /reference|representative/ && $8 ~ /'"$organism_name2"'/ && $11=="latest" && $12 ~ /Chromosome|Complete Genome/ {print $0}' | cut -f20 >> DL_list3
