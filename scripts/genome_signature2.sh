@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir -p analysis/Genome_signature/gbk2 && cd $_
+mkdir -p analysis/Genome_signature2/gbk && cd $_
 
 # copy GenBank files and change extension
 cp ../../../data/dataset3/*.gbff .
