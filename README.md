@@ -33,6 +33,7 @@ qsub scripts/16S_phylogeny_2019-11-04.sh
 
 # ゲノムの特徴解析（総塩基数 Size、GC含量 GC、遺伝子数 tRNA rRNA cds highlyExpressed、コドン使用バイアス S_value delta_enc）
 bash scripts/genome_signature.sh
+bash scripts/genome_signature2.sh
 
 mv *.sh.* job/
 ```
