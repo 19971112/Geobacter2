@@ -2,7 +2,6 @@
 #PBS -l ncpus=1
 #PBS -V
 cd ${PBS_O_WORKDIR}
-conda activate bio
 
 # extracting 16S rRNA sequence from GenBank files and concatenate
 mkdir -p data/16S_3
