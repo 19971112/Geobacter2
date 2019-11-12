@@ -22,6 +22,9 @@ last-update 2019-10-29
 ```
 # git clone と更新
 git clone https://github.com/19971112/Geobacter.git
+mv *.sh.* job/
+mv *.jo.* job/
+mv *.sh.* job/
 git pull origin master
 
 # 置換リストの作成
@@ -44,9 +47,10 @@ bash scripts/genome_signature2.sh
 
 # 多変量解析
 qsub scripts/WCA.job
+qsub scripts/WCA2.job
 
 
-mv *.sh.* job/
+
 ```
 
 ## 解析に使用するデータセット候補
