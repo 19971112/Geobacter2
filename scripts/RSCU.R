@@ -34,3 +34,7 @@ df1=read.table(OUTPUT1, header=TRUE, sep=",")
 colnames(df1) <- c("AA","codon","eff_all","freq_all","RSCU_all")
 df2=read.table(OUTPUT2, header=TRUE, sep=",")
 colnames(df2) <- c("AA","codon","eff_high","freq_high","RSCU_high")
+
+df3 <- merge ( df1, df2, all=TRUE )
+OUTPUT3 <- paste("table.", ACCESSION, ".uco.csv", sep = "")
+write.csv(df3, file=OUTPUT3, quote=TRUE, row.names=FALSE)
