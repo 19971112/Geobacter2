@@ -29,3 +29,8 @@ sum(TF) # unlist(getAnnot(seqs[TF]))
 df.uco.high <- uco(unlist(seqs[TF]), as.data.frame=TRUE)
 OUTPUT2 <- paste("table.", ACCESSION, ".uco.high.csv", sep = "")
 write.csv(df.uco.high[order(df.uco.high$AA),], file=OUTPUT2, quote=TRUE, row.names=FALSE)
+
+df1=read.table(OUTPUT1, header=TRUE, sep=",")
+colnames(df1) <- c("AA","codon","eff_all","freq_all","RSCU_all")
+df2=read.table(OUTPUT2, header=TRUE, sep=",")
+colnames(df2) <- c("AA","codon","eff_high","freq_high","RSCU_high")
