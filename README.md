@@ -42,6 +42,9 @@ qsub scripts/RSUC.sh
 bash scripts/genome_signature.sh
 bash scripts/genome_signature2.sh
 
+# 多変量解析
+qsub scripts/WCA.job
+
 
 mv *.sh.* job/
 ```
