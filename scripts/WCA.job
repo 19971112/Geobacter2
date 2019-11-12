@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -q small
+#PBS -l mem=8G
+#PBS -N pbs.sh
+#set -euo pipefail
+
+cd ${PBS_O_WORKDIR}
+
+mkdir -p analysis/WCA && cd $_
+
+# start
+echo; echo "[$(date)] $0 job has been started."
+
+# run_g_codon_mva.pl
+GBK="NC_000913" # Escherichia coli K12 MG1655
+GBK="NC_002483" # Plasmid F
+(time perl -I/home/haruo/g-language-1.9.1/lib run_g_codon_mva.pl "${GBK}" ) >& log.$(date +%F).txt
+
+# Done
+echo; echo "[$(date)] $0 has been successfully completed."
