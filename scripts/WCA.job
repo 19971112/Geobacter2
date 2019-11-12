@@ -11,9 +11,9 @@ mkdir -p analysis/WCA && cd $_
 echo; echo "[$(date)] $0 job has been started."
 
 # run_g_codon_mva.pl
-GBK="NC_000913" # Escherichia coli K12 MG1655
-GBK="NC_002483" # Plasmid F
-(time perl -I/home/haruo/g-language-1.9.1/lib ../../scripts/run_g_codon_mva.pl "${GBK}" ) >& log.$(date +%F).txt
+python ../../scripts/list.py "../../data/dataset3/*.gbff" > list.txt
+for GBK in $(cut -f1 list.txt); do mkdri $GBK && cd $_;(time perl -I/home/haruo/g-language-1.9.1/lib ../../scripts/run_g_codon_mva.pl "${GBK}" ) >& log.$(date +%F).txt; cd ..; done
+
 
 # Done
 echo; echo "[$(date)] $0 has been successfully completed."
