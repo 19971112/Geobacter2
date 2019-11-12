@@ -24,6 +24,9 @@ last-update 2019-10-29
 git clone https://github.com/19971112/Geobacter.git
 git pull origin master
 
+# 置換リストの作成
+bash scripts/make_replacelist.sh
+
 # データセットの用意
 qsub scripts/DL_dataset_2019-11-04.sh
 qsub scripts/DL_dataset_2019-11-08.sh
