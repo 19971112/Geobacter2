@@ -23,8 +23,8 @@ last-update 2019-10-29
 # git clone と更新
 git clone https://github.com/19971112/Geobacter.git
 mv *.sh.* job/
-mv *.jo.* job/
-mv *.sh.* job/
+mv *.job.* job/
+
 git pull origin master
 
 # 置換リストの作成
