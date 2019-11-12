@@ -11,8 +11,6 @@ for FILE in `ls -Sr gbk/*.gbk`; do echo -n $FILE" "; qsub -v gbk="$FILE" ../../s
 
 sleep 3m
 
-cd g_genome
-
 for i in g_genome/*.txt; do head -n1 $i > g_genome_all.txt; done
 for i in g_genome/*.txt; do tail -n +2 $i >> g_genome_all.txt ;done
 
