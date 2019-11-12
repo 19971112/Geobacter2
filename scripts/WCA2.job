@@ -5,7 +5,7 @@
 
 cd ${PBS_O_WORKDIR}
 
-mkdir -p analysis/WCA && cd $_
+mkdir -p analysis/WCA2 && cd $_
 
 # start
 echo; echo "[$(date)] $0 job has been started."
