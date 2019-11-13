@@ -14,3 +14,5 @@ sleep 3m
 for i in g_genome/*.txt; do head -n1 $i > g_genome_all.txt; done
 for i in g_genome/*.txt; do tail -n +2 $i >> g_genome_all.txt ;done
 
+python ../../scripts/replace.py ../../data/replacelist/replacelist1.txt g_genome_all.txt > rename_g_genome_all.txt
+
