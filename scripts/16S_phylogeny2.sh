@@ -16,4 +16,4 @@ mafft --auto data/16S_4/all.fasta > analysis/16S_phylogeny_4/16S.maf
 FastTree -gtr -nt analysis/16S_phylogeny_4/16S.maf > analysis/16S_phylogeny_4/16S.maf.newick
 
 # rename
-python Geobacter/scripts/replace.py data/replacelist/replacelist2.txt analysis/16S_phylogeny_4/rename_16S.maf.newick
+python scripts/replace.py data/replacelist/replacelist2.txt analysis/16S_phylogeny_4/rename_16S.maf.newick
