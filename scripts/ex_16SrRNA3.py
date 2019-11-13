@@ -20,6 +20,9 @@ for genome in gbank:
                         gi=str(gene.qualifiers['db_xref'])
                         gi=gi.split(":")[1]
                         gi=gi.split("'")[0]
-                        print(">GeneId|%s|16SrRNA_%s|%s\n%s" % (gi,i,genome.description,seq_slice))
+                        print(">%s\n%s" % (FNAME,seq_slice))
                     else:
-                        print(">GeneId|NoGenID|16SrRNA_%s|%s\n%s" % (i,genome.description,seq_slice))
+                        print(">%s\n%s" % (FNAME,seq_slice))
+                    
+                    break
+                    
