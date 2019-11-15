@@ -11,6 +11,6 @@ cp ../../data/dataset3/*.gbff .
 for filename in *.gbff; do mv $filename ${filename%.gbff}.gbk; done
 
 # each.pl
-data="R0";
-dir=".";
+data="R0"
+dir="."
 (time perl -I/home/haruo/g-language-1.9.1/lib ../../scripts/each.pl $dir $data &) >& log.each.$data.txt
