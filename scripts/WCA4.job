@@ -14,3 +14,5 @@ for filename in *.gbff; do mv $filename ${filename%.gbff}.gbk; done
 data="R0"
 dir="."
 (time perl -I/home/haruo/g-language-1.9.1/lib ../../scripts/each.pl $dir $data ) >& log.each.$data.txt
+
+ Rscript --vanilla ../../scripts/g_each.R .
