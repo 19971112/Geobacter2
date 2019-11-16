@@ -35,6 +35,7 @@ bash scripts/genome_signature2.sh &
 # 多変量解析
 qsub scripts/WCA.job
 qsub scripts/WCA2.job
+qsub scripts/WCA3.job
 qsub scripts/WCA4.job
 
 
