@@ -6,4 +6,5 @@ cd ${PBS_O_WORKDIR}
 
 mkdir -p mkdir -p analysis/RSCU_heatmap && cd $_
 
-for i in ../RSCU/*.uco.all.csv; do echo ${i##*/} > ${i##*/}.txt; cut -d "," -f5 $i | sed -e '1d' >> ${i##*/}.txt; done
+for i in ../RSCU/*.uco.all.csv; do echo ${i##*/} | sed -e 's/table.//g' | sed -e 's/.uco.all.csv//g' > ${i##*/}.txt; cut -d "," -f5 $i | sed -e '1d' >> ${i##*/}.txt; done
+paste -d "," *.txt > heatmap.csv
