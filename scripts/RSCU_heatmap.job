@@ -1,0 +1,11 @@
+#!/bin/sh
+#PBS -q small
+#PBS -l ncpus=1
+#PBS -V
+cd ${PBS_O_WORKDIR}
+
+mkdir -p mkdir -p analysis/RSCU_heatmap && cd $_
+
+for i in ../RSCU/*.uco.all.csv; do echo ${i##*/} > ${i##*/}.txt; cut -d "," -f5 $i >> ${i##*/}.txt; done
+
+for i in *.txt; do sed -e '3d' $i; done
