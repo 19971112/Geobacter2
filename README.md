@@ -25,8 +25,11 @@ qsub scripts/16S_phylogeny_2019-11-04.sh
 qsub scripts/16S_phylogeny.sh
 qsub scripts/16S_phylogeny2.sh
 
-# RSUCの解析
+# RSCUの解析
 qsub scripts/RSUC.sh
+
+# RSCUのヒートマップ
+qsub scripts/RSCU_heatmap.job
 
 # ゲノムの特徴解析（総塩基数 Size、GC含量 GC、遺伝子数 tRNA rRNA cds highlyExpressed、コドン使用バイアス S_value delta_enc）
 bash scripts/genome_signature.sh
