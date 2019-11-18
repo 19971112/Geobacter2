@@ -18,6 +18,9 @@ d2 <- as.matrix(d[, 3:29])
 
 heatmap(d2)
 
+# install.packages(" ggplot2").
+library(ggplot2)
+
 library("heatmap3")
 library(GMD)
 heatmap.3(d2, trace="none", dendrogram="both", Rowv=T, Colv=T, color.FUN="redgreen", cluster.by.row=T, cluster.by.col=T, mapratio=1, mapsize=4, main="")
