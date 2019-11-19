@@ -16,6 +16,7 @@ d2 <- d[, 2:29]
 d2 <- as.matrix(d[, 2:29])
 d2 <- as.matrix(d[, 3:29])
 
+heatmap(d2, col=cm.colors(256))
 heatmap(d2)
 
 # install.packages(" ggplot2").
