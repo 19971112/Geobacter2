@@ -9,5 +9,9 @@ mkdir -p mkdir -p analysis/RSCU_heatmap && cd $_
 for i in ../RSCU/*.uco.all.csv; do cut -d "," -f1,2 $i | sed -e 's/\"//g' > 1.txt; done
 for i in ../RSCU/*.uco.all.csv; do echo ${i##*/} | sed -e 's/table.//g' | sed -e 's/.uco.all.csv//g' > ${i##*/}.txt; cut -d "," -f5 $i | sed -e '1d' >> ${i##*/}.txt; done
 
-
 paste -d "," *.txt > heatmap.csv
+
+python ../../scripts/list.py "../../data/dataset3/*.gbff" | cut -f1,2 | sed -e 's/..\/..\/data\/dataset3\///g' > replist1.txt
+#python ../../scripts/replace.py ../../data/replacelist/replacelist2.txt replist1.txt > analysis/16S_phylogeny_4/rename_16S.maf.newick
+python ../../scripts/replace.py replist1.txt heatmap.csv > rename1_heatmap.csv
+python ../../scripts/replace.py ../../data/replacelist/replacelist2.txt 
