@@ -1,12 +1,12 @@
 import argparse    # 1. argparseをインポート
 
-parser = argparse.ArgumentParser(description='このプログラムの説明（なくてもよい）')    # 2. パーサを作る
+parser = argparse.ArgumentParser(description='系統樹と表の並び替え')    # 2. パーサを作る
 
 # 3. parser.add_argumentで受け取る引数を追加していく
-parser.add_argument('arg1', help='この引数の説明（なくてもよい）')    # 必須の引数を追加
-parser.add_argument('arg2', help='foooo')
-parser.add_argument('--arg3')    # オプション引数（指定しなくても良い引数）を追加
-parser.add_argument('-a', '--arg4')   # よく使う引数なら省略形があると使う時に便利
+parser.add_argument('-n', '--newick', help='newick file') 
+parser.add_argument('-t', '--table', help='table file, sep = tab, first line index')
+parser.add_argument('-o1', '--outgroup1', help='set outgroup1')   
+parser.add_argument('-o2', '--outgroup2', help='set outgroup2')  
 
 args = parser.parse_args()    # 4. 引数を解析
 
