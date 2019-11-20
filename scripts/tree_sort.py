@@ -9,10 +9,10 @@ parser.add_argument('-o1', '--outgroup1', help='set outgroup1')
 parser.add_argument('-o2', '--outgroup2', help='set outgroup2')  
 args = parser.parse_args() 
 
-NEWICK = args.arg1
-g_genome = args.arg2
-OUTG1 = args.arg3
-OUTG2 = args.arg4
+NEWICK = args.newick
+g_genome = args.table
+OUTG1 = args.outgroup1
+OUTG2 = args.outgroup2
 
 # 系統樹の読み込み
 t = Tree(NEWICK , format= 0)
