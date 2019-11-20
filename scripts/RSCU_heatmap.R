@@ -8,24 +8,16 @@
 
 args1 = commandArgs(trailingOnly=TRUE)[1]
 
-
-args1 = "heatmap.csv"
-d <- read.table(args1, sep=",", header=TRUE)
-d2 <- d[, 2:29]
-
-d2 <- as.matrix(d[, 2:29])
-d2 <- as.matrix(d[, 3:29])
-
-heatmap(d2, col=cm.colors(256))
-heatmap(d2)
-
-# install.packages(" ggplot2").
-library(ggplot2)
-
-library("heatmap3")
-library(GMD)
-heatmap.3(d2, trace="none", dendrogram="both", Rowv=T, Colv=T, color.FUN="redgreen", cluster.by.row=T, cluster.by.col=T, mapratio=1, mapsize=4, main="")
+# まとめ
+args1 = "ch_rename2_heatmap.csv.tsv.sort.txt"
+d <- read.table(args1, sep="\t", header=TRUE, row.names=1)
+d <- as.matrix(d[,-c(65,66,67)])
+par(family="Courier")
+heatmap(d, Colv=NA, Rowv=NA, col=cm.colors(256), cexCol=0.5)
 
 
-temp <- c(-3, 2, 1, 2, 1.2, -1.2)
-col <- colByValue(temp, col = colorRampPalette(c('chartreuse4', 'white', 'firebrick'))(1024), range = c(-2,2))
+col1<-rgb(0.7, 0.5, 0.2, 0.7) #色は RGB alphaで0-1の値で指定できる。
+col2<-rgb(0.2, 0.5, 0.7, 0.7)
+
+my.col2 <- colorRampPalette(c(col1,"white",col2)) 
+heatmap(x, col=my.col2(256))
