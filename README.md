@@ -36,7 +36,7 @@ bash scripts/genome_signature.sh
 bash scripts/genome_signature2.sh &
 
 # 系統樹と表の並び替え
-scripts/table_sort.job
+qsub scripts/table_sort.job
 
 # 多変量解析
 qsub scripts/WCA.job
