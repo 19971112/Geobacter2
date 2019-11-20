@@ -16,4 +16,5 @@ python ../../scripts/list.py "../../data/dataset3/*.gbff" | awk -F"\t" '{print $
 python ../../scripts/replace.py replist1.txt heatmap.csv > rename1_heatmap.csv
 python ../../scripts/replace.py ../../data/replacelist/replacelist2.txt rename1_heatmap.csv > rename2_heatmap.csv
 
-cat ファイルPATH | perl -anF',|\n' -e'$n=@F-1if!$n;for(0..$n){push@{$$m[$_]},$F[$_]}''END{print map{join"\t",@$_,"\n"}@$m}'
+cat rename2_heatmap.csv | tr "," "\\t" > rename2_heatmap.csv.tsv
+cat rename2_heatmap.csv.tsv | perl -anF'\t|\n' -e'$n=@F-1if!$n;for(0..$n){push@{$$m[$_]},$F[$_]}''END{print map{join"\t",@$_,"\n"}@$m}' > ch_rename2_heatmap.csv.tsv
